@@ -10,53 +10,49 @@ const Contacts = () => {
   const colors = tokens(theme.palette.mode);
 
   const columns = [
-    { field: "id", headerName: "ID", flex: 0.5 },
-    { field: "registrarId", headerName: "Registrar ID" },
+
     {
-      field: "name",
-      headerName: "Name",
+      field: "Course",
+      headerName: "Course",
       flex: 1,
       cellClassName: "name-column--cell",
     },
     {
-      field: "age",
-      headerName: "Age",
-      type: "number",
+      field: "Focus",
+      headerName: "Focus",
       headerAlign: "left",
       align: "left",
+      flex: 2,
+      
     },
     {
-      field: "phone",
-      headerName: "Phone Number",
+      field: "Users",
+      headerName: "Users",
+      flex: 1,
+      
+    },
+    {
+      field: "Owner",
+      headerName: "Owner",
       flex: 1,
     },
     {
-      field: "email",
-      headerName: "Email",
+      field: "Coverage",
+      headerName: "Coverage" ,
       flex: 1,
+      
+  
     },
-    {
-      field: "address",
-      headerName: "Address",
-      flex: 1,
-    },
-    {
-      field: "city",
-      headerName: "City",
-      flex: 1,
-    },
-    {
-      field: "zipCode",
-      headerName: "Zip Code",
-      flex: 1,
-    },
+   
   ];
 
   return (
+    
     <Box m="20px">
       <Header
-        title="CONTACTS"
-        subtitle="List of Contacts for Future Reference"
+        title="COURSES"
+        subtitle="List of Courses"
+        
       />
       <Box
         m="40px 0 0 0"
@@ -80,7 +76,7 @@ const Contacts = () => {
           },
           "& .MuiDataGrid-footerContainer": {
             borderTop: "none",
-            backgroundColor: colors.blueAccent[700],
+            backgroundColor: colors.PurpleShade[400],
           },
           "& .MuiCheckbox-root": {
             color: `${colors.greenAccent[200]} !important`,

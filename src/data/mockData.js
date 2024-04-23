@@ -1,321 +1,256 @@
-import { tokens } from "../theme";
-
 export const mockDataTeam = [
-  {
-    id: 1,
-    name: "Judith Okafor",
-    email: "judokw@gmail.com",
-    age: 5,
-    phone: "(665)121-5454",
-    Country: "Nigeria",
-  },
-  {
-    id: 2,
-    name: "Haven Moteskwa",
-    email: "Hmotse34@gmail.com",
-    age: 2,
-    phone: "(421)314-2288",
-    Country: "Ethiopia",
-  },
-  {
-    id: 3,
-    name: "Jaime Leom",
-    email: "jaimelem@gmail.com",
-    age: 10,
-    phone: "(422)982-6739",
-    Country: "Kenya",
-  },
-  {
-    id: 4,
-    name: "Iveren Njoroge",
-    email: "njoroIve@gmail.com",
-    age: 5,
-    phone: "(921)425-6742",
-    Country: "South Africa",
-  },
-  {
-    id: 5,
-    name: "Daenerys Targaryen",
-    email: "daenerystargaryen@gmail.com",
-    age: 3,
-    phone: "(421)445-1189",
-    Country: "Burundi",
-  },
-  {
-    id: 6,
-    name: "Ever Melisandre",
-    email: "evermelisandre@gmail.com",
-    age: 9,
-    phone: "(232)545-6483",
-    Country: "Tanzania",
-  },
-  {
-    id: 7,
-    name: "Ferrara Clifford",
-    email: "ferraraclifford@gmail.com",
-    age: 4,
-    phone: "(543)124-0123",
-    Country: "Benin",
-  },
-  {
-    id: 8,
-    name: "Rossini Frances",
-    email: "rossinifrances@gmail.com",
-    age: 6,
-    phone: "(222)444-5555",
-    Country: "Cameroon",
-  },
-  {
-    id: 9,
-    name: "Harvey Roxie",
-    email: "harveyroxie@gmail.com",
-    age: 5,
-    phone: "(444)555-6239",
-    access: "admin",
-  },
+{
+  id:19057,
+  ParentName:"Damisola Marawo",
+  ChildName:"Elizabeth Okafor",
+  Email:"judokw@gmail.com",
+  Location:"Abuja",
+  Duration : "4years",
+  
+},
+{
+  id:122,
+  ParentName:"Judith Ensonwo",
+  ChildName:"Mercy Mitei",
+  Email:"mutc@gmail.com",
+  Location:"Haiti",
+  Duration : "2years",
+  
+},
+{
+  id:3235,
+  ParentName:"Josphine Omondi",
+  ChildName:"Mutinta Muleo",
+  Email:"muleo39@gmail.com",
+  Location:"Kenya",
+  Duration : "2months",
+  
+},
+{
+  id:4479,
+  ParentName:"Stephanie Ozo",
+  ChildName:"Rachael Muthoni",
+  Email:"raymso3@gmail.com",
+  Location:"Ghana",
+  Duration : "1.2years",
+  
+},
+{
+  id:523,
+  ParentName:"Sydnea Okafor",
+  ChildName:"Milkah Cheblbie",
+  Email:"mb5556@gmail.com",
+  Location:"Tanzania",
+  Duration : "9months",
+  
+},
+{
+  id:45856,
+  ParentName:"Mercy Eke",
+  ChildName:"Olanireti Sam",
+  Email:"olaola76@gmail.com",
+  Location:"Lagos",
+  Duration : "5months",
+  
+},
+{
+  id:74587,
+  ParentName:"Purity star",
+  ChildName:"Tayla Motesku",
+  Email:"tayla.m@gmail.com",
+  Location:"South Africa",
+  Duration : "1year",
+  
+},
+{
+  id:57548,
+  ParentName:"Ivy Iveren",
+  ChildName:"Haven Asthba",
+  Email:"asthba.w.w@gmail.com",
+  Location:"Ethipia",
+  Duration : "1month",
+  
+},
+{
+  id:3483909,
+  ParentName:"Rachael Njoroge",
+  ChildName:"Kezia Ching",
+  Email:"kezy.ch@gmail.com",
+  Location:"Cameroon",
+  Duration : "3years",
+  
+},
+{
+  id:185480,
+  ParentName:"Abdinasir Mohamed",
+  ChildName:"Aishat Saluwedeen",
+  Email:"aisha@gmail.com",
+  Location:"Congo",
+  Duration : "6months",
+  
+},
+{
+  id:24511,
+  ParentName:"Damisola Marawo",
+  ChildName:"Elizabeth Okafor",
+  Email:"judokw@gmail.com",
+  Location:"Abuja",
+  Duration : "4years",
+  
+},
+{
+  id:18792,
+  ParentName:"Damisola Marawo",
+  ChildName:"Elizabeth Okafor",
+  Email:"judokw@gmail.com",
+  Location:"Abuja",
+  Duration : "4years",
+  
+},
+{
+  id:18983,
+  ParentName:"Damisola Marawo",
+  ChildName:"Elizabeth Okafor",
+  Email:"judokw@gmail.com",
+  Location:"Abuja",
+  Duration : "4years",
+  
+}
 ];
 
 export const mockDataContacts = [
   {
     id: 1,
-    name: "Adachuko Okafor",
-    email: "adaokaf5@gmail.com",
-    age: 35,
-    phone: "(665)121-5454",
-    address: "0912 Won Street, Alabama, SY 10001",
-    city: "Nigeria",
-    zipCode: "10001",
-    registrarId: 123512,
+    Course: "Colors",
+    Focus: "Grammar Development",
+    Users: "2M",
+    Owner: "Chadwick Bosman",
+    Coverage:"50%",
   },
   {
     id: 2,
-    name: "Kyempa Oluwalemi",
-    email: "oluwa34@gmail.com",
-    age: 42,
-    phone: "(421)314-2288",
-    address: "1234 Main Street, New York, NY 10001",
-    city: "Cameroon",
-    zipCode: "13151",
-    registrarId: 123512,
+    Course: "Puzzle",
+    Focus: "Speech Rate",
+    Users: "350K",
+    Owner: "Miracle Blessing",
+    Coverage:"70%"
   },
   {
     id: 3,
-    name: "Alice Wangari",
-    email: "wangari.alicia@gmail.com",
-    age: 45,
-    phone: "(422)982-6739",
-    address: "3333 Want Blvd, Estanza, NAY 42125",
-    city: "Kenya",
-    zipCode: "87281",
-    registrarId: 4132513,
+    Course: "Mock up",
+    Focus: "Articulation/Grammar Development",
+    Users: "1k",
+    Owner: "Dawyne Johnson",
+    Coverage:"100%",
   },
   {
     id: 4,
-    name: "Anya Stark",
-    email: "anyastark@gmail.com",
-    age: 16,
-    phone: "(921)425-6742",
-    address: "1514 Main Street, New York, NY 22298",
-    city: "New York",
-    zipCode: "15551",
-    registrarId: 123512,
+    Course: "Mind Games",
+    Focus: "Grammar Development/Rate of Speech/Articulation",
+    Users: "3M",
+    Owner: "Milkah Ezo",
+    Coverage:"80%",
   },
   {
     id: 5,
-    name: "Daenerys Targaryen",
-    email: "daenerystargaryen@gmail.com",
-    age: 31,
-    phone: "(421)445-1189",
-    address: "11122 Welping Ave, Tenting, CD 21321",
-    city: "Tenting",
-    zipCode: "14215",
-    registrarId: 123512,
+    Course: "Chatter",
+    Focus: "Fluency",
+    Users: "4.5M",
+    Owner: "Chadwick Bosman",
+    Coverage:"40%" ,
   },
   {
     id: 6,
-    name: "Ever Melisandre",
-    email: "evermelisandre@gmail.com",
-    age: 150,
-    phone: "(232)545-6483",
-    address: "1234 Canvile Street, Esvazark, NY 10001",
-    city: "Esvazark",
-    zipCode: "10001",
-    registrarId: 123512,
+    Course: "Desits",
+    Focus: "Articulation",
+    Users: "70k",
+    Owner: "Medrine Wanjiru",
+    Coverage: "5%",
   },
   {
     id: 7,
-    name: "Ferrara Clifford",
-    email: "ferraraclifford@gmail.com",
-    age: 44,
-    phone: "(543)124-0123",
-    address: "22215 Super Street, Everting, ZO 515234",
-    city: "Evertin",
-    zipCode: "51523",
-    registrarId: 123512,
+    Course: "Dora",
+    Focus: "Grammar Development",
+    Users: "6M",
+    Owner: "Chadwick Bosman",
+    Coverage:"67%" ,
   },
   {
     id: 8,
-    name: "Rossini Frances",
-    email: "rossinifrances@gmail.com",
-    age: 36,
-    phone: "(222)444-5555",
-    address: "4123 Ever Blvd, Wentington, AD 142213",
-    city: "Esteras",
-    zipCode: "44215",
-    registrarId: 512315,
+    Course: "Narratives",
+    Focus: "Grammar Development",
+    Users: "1.5M",
+    Owner: "Austin Arelo",
+    Coverage:"40%",
   },
   {
     id: 9,
-    name: "Harvey Roxie",
-    email: "harveyroxie@gmail.com",
-    age: 65,
-    phone: "(444)555-6239",
-    address: "51234 Avery Street, Cantory, ND 212412",
-    city: "Colunza",
-    zipCode: "111234",
-    registrarId: 928397,
+    Course: "Shapes",
+    Focus: "Grammar Development/Articulation",
+    Users: "150k",
+    Owner: "Camila Cabelo",
+    Coverage:"15%",
   },
   {
     id: 10,
-    name: "Enteri Redack",
-    email: "enteriredack@gmail.com",
-    age: 42,
-    phone: "(222)444-5555",
-    address: "4123 Easer Blvd, Wentington, AD 142213",
-    city: "Esteras",
-    zipCode: "44215",
-    registrarId: 533215,
+    Course: "Context",
+    Focus: "Grammar Development",
+    Users: "30o",
+    Owner: "Chadwick Bosman",
+    Coverage:"65%" ,
   },
   {
     id: 11,
-    name: "Steve Goodman",
-    email: "stevegoodmane@gmail.com",
-    age: 11,
-    phone: "(444)555-6239",
-    address: "51234 Fiveton Street, CunFory, ND 212412",
-    city: "Colunza",
-    zipCode: "1234",
-    registrarId: 92197,
+    Course: "Spelling Bee",
+    Focus: "Articulation/Rate of speech",
+    Users: "700k",
+    Owner: "Anastacia Malik",
+    Coverage:"65%"
+    
   },
+  
 ];
 
-export const mockDataInvoices = [
+export const mockDataAchievers = [
   {
     id: 1,
-    name: "Jon Snow",
-    email: "jonsnow@gmail.com",
-    cost: "21.24",
-    phone: "(665)121-5454",
-    date: "03/12/2022",
+    name: "Chidiogor Ezechukwu",
   },
   {
     id: 2,
-    name: "Cersei Lannister",
-    email: "cerseilannister@gmail.com",
-    cost: "1.24",
-    phone: "(421)314-2288",
-    date: "06/15/2021",
+    name: "Damisola Morawo",
+    
   },
   {
     id: 3,
-    name: "Jaime Lannister",
-    email: "jaimelannister@gmail.com",
-    cost: "11.24",
-    phone: "(422)982-6739",
-    date: "05/02/2022",
+    name: "Judith Ezenwosu",
   },
   {
     id: 4,
-    name: "Anya Stark",
-    email: "anyastark@gmail.com",
-    cost: "80.55",
-    phone: "(921)425-6742",
-    date: "03/21/2022",
+    name: "Iveren Madza",
+
   },
   {
     id: 5,
-    name: "Daenerys Targaryen",
-    email: "daenerystargaryen@gmail.com",
-    cost: "1.24",
-    phone: "(421)445-1189",
-    date: "01/12/2021",
+    name: "Josephine Mensah",
+    
   },
   {
     id: 6,
-    name: "Ever Melisandre",
-    email: "evermelisandre@gmail.com",
-    cost: "63.12",
-    phone: "(232)545-6483",
-    date: "11/02/2022",
+    name: "IVy Wanjohi",
   },
   {
     id: 7,
-    name: "Ferrara Clifford",
-    email: "ferraraclifford@gmail.com",
-    cost: "52.42",
-    phone: "(543)124-0123",
-    date: "02/11/2022",
+    name: "Haven Asthba",
+   
   },
   {
     id: 8,
-    name: "Rossini Frances",
-    email: "rossinifrances@gmail.com",
-    cost: "21.24",
-    phone: "(222)444-5555",
-    date: "05/02/2021",
+    name: "Phiona Wamboi",
   },
 ];
 
-export const mockTransactions = [
-  {
-    txId: "01e4dsa",
-    user: "johndoe",
-    date: "2021-09-01",
-    cost: "43.95",
-  },
-  {
-    txId: "0315dsaa",
-    user: "jackdower",
-    date: "2022-04-01",
-    cost: "133.45",
-  },
-  {
-    txId: "01e4dsa",
-    user: "aberdohnny",
-    date: "2021-09-01",
-    cost: "43.95",
-  },
-  {
-    txId: "51034szv",
-    user: "goodmanave",
-    date: "2022-11-05",
-    cost: "200.95",
-  },
-  {
-    txId: "0a123sb",
-    user: "stevebower",
-    date: "2022-11-02",
-    cost: "13.55",
-  },
-  {
-    txId: "01e4dsa",
-    user: "aberdohnny",
-    date: "2021-09-01",
-    cost: "43.95",
-  },
-  {
-    txId: "120s51a",
-    user: "wootzifer",
-    date: "2019-04-15",
-    cost: "24.20",
-  },
-  {
-    txId: "0315dsaa",
-    user: "jackdower",
-    date: "2022-04-01",
-    cost: "133.45",
-  },
-];
+
 
 export const mockBarData = [
   {
@@ -430,168 +365,5 @@ export const mockPieData = [
   },
 ];
 
-export const mockLineData = [
-  {
-    id: "japan",
-    color: tokens("dark").greenAccent[500],
-    data: [
-      {
-        x: "plane",
-        y: 101,
-      },
-      {
-        x: "helicopter",
-        y: 75,
-      },
-      {
-        x: "boat",
-        y: 36,
-      },
-      {
-        x: "train",
-        y: 216,
-      },
-      {
-        x: "subway",
-        y: 35,
-      },
-      {
-        x: "bus",
-        y: 236,
-      },
-      {
-        x: "car",
-        y: 88,
-      },
-      {
-        x: "moto",
-        y: 232,
-      },
-      {
-        x: "bicycle",
-        y: 281,
-      },
-      {
-        x: "horse",
-        y: 1,
-      },
-      {
-        x: "skateboard",
-        y: 35,
-      },
-      {
-        x: "others",
-        y: 14,
-      },
-    ],
-  },
-  {
-    id: "france",
-    color: tokens("dark").blueAccent[300],
-    data: [
-      {
-        x: "plane",
-        y: 212,
-      },
-      {
-        x: "helicopter",
-        y: 190,
-      },
-      {
-        x: "boat",
-        y: 270,
-      },
-      {
-        x: "train",
-        y: 9,
-      },
-      {
-        x: "subway",
-        y: 75,
-      },
-      {
-        x: "bus",
-        y: 175,
-      },
-      {
-        x: "car",
-        y: 33,
-      },
-      {
-        x: "moto",
-        y: 189,
-      },
-      {
-        x: "bicycle",
-        y: 97,
-      },
-      {
-        x: "horse",
-        y: 87,
-      },
-      {
-        x: "skateboard",
-        y: 299,
-      },
-      {
-        x: "others",
-        y: 251,
-      },
-    ],
-  },
-  {
-    id: "us",
-    color: tokens("dark").redAccent[200],
-    data: [
-      {
-        x: "plane",
-        y: 191,
-      },
-      {
-        x: "helicopter",
-        y: 136,
-      },
-      {
-        x: "boat",
-        y: 91,
-      },
-      {
-        x: "train",
-        y: 190,
-      },
-      {
-        x: "subway",
-        y: 211,
-      },
-      {
-        x: "bus",
-        y: 152,
-      },
-      {
-        x: "car",
-        y: 189,
-      },
-      {
-        x: "moto",
-        y: 152,
-      },
-      {
-        x: "bicycle",
-        y: 8,
-      },
-      {
-        x: "horse",
-        y: 197,
-      },
-      {
-        x: "skateboard",
-        y: 107,
-      },
-      {
-        x: "others",
-        y: 170,
-      },
-    ],
-  },
-];
+
 

@@ -1,27 +1,51 @@
 import { createContext, useState, useMemo } from "react";
 import { createTheme } from "@mui/material/styles";
-import { purple } from "@mui/material/colors";
+// import { purple } from "@mui/material/colors";
 
 // color design tokens export
 export const tokens = (mode) => ({
   ...(mode === "dark"
     ? {
+      PurpleShade: {
+        100: "#decfe7",
+        200: "#bd9fcf",
+        300: "#9b6eb7",
+        400: "#7a3e9f",
+        500: "#590e87", //primary
+        600: "#470b6c",
+        700: "#350851",
+        800: "#240636",
+        900: "#12031b"
+    },
+    
+    CreamyShade: {
+        100: "#fffff3",
+        200: "#fefee8",
+        300: "#fefedc",
+        400: "#fdfdd1",
+        500: "#fdfdc5", //main
+        600: "#caca9e",
+        700: "#989876",
+        800: "#65654f",
+        900: "#333327"
+    },
         grey: {
-          100: "#e0e0e0",
-          200: "#c2c2c2",
-          300: "#a3a3a3",
-          400: "#858585",
+          100: "#e0e0e0", //font color
+          200: "#c2c2c2", 
+          300: "#a3a3a3", //sidebar headings
           500: "#666666",
+          400: "#858585",
           600: "#525252",
           700: "#3d3d3d",
           800: "#292929",
           900: "#141414",
         },
+        
         primary: {
           100: "#d0d1d5",
-          200: "#a1a4ab",
-          300: "#727681",
-          400: "#1F2A40",
+          200: "#a1a4ab",  
+          300: "#727681", 
+          400: "#350851", //dashboard boxes
           500: "#141b2d",
           600: "#101624",
           700: "#0c101b",
@@ -34,7 +58,7 @@ export const tokens = (mode) => ({
           300: "#94e2cd",
           400: "#70d8bd",
           500: "#4cceac",
-          600: "#3da58a",
+          600: "#3da58a", //dashbaord icons
           700: "#2e7c67",
           800: "#1e5245",
           900: "#0f2922",
@@ -53,16 +77,40 @@ export const tokens = (mode) => ({
         blueAccent: {
           100: "#e1e2fe",
           200: "#c3c6fd",
-          300: "#a4a9fc",
+          300:  "#a4a9fc",
           400: "#868dfb",
-          500: "#6870fa",
-          600: "#535ac8",
+          500:  "#6870fa",
+          600:  "#535ac8",
           700: "#3e4396",
-          800: "#2a2d64",
+          800:  "#2a2d64",
           900: "#151632",
         },
       }
+//lightmode colors
     : {
+      PurpleShade: {
+    100: "#decfe7",
+    200: "#bd9fcf",
+    300: "#9b6eb7",
+    400: "#7a3e9f",
+    500: "#590e87", //primary
+    600: "#470b6c",
+    700: "#350851",
+    800: "#240636",
+    900: "#12031b"
+},
+
+CreamyShade: {
+    100: "#fffff3",
+    200: "#fefee8",
+    300: "#fefedc",
+    400: "#fdfdd1",
+    500: "#fdfdc5", //main
+    600: "#caca9e",
+    700: "#989876",
+    800: "#65654f",
+    900: "#333327"
+},
         grey: {
           100: "#141414",
           200: "#292929",
@@ -78,7 +126,7 @@ export const tokens = (mode) => ({
           100: "#040509",
           200: "#080b12",
           300: "#0c101b",
-          400: "#f2f0f0", // manually changed
+          400: "#fdfdc5", // light manually changed
           500: "#141b2d",
           600: "#1F2A40",
           700: "#727681",
@@ -119,18 +167,7 @@ export const tokens = (mode) => ({
           900: "#e1e2fe",
         },
 
-        purpleAccent: {
-          100: "590e87",
-          500: "#a855f7",
-          600: "#9333ea",
-          700: "#7e22ce",
-          800: "#6b21a8"
-
-        }
- 
-        
-
-
+    
 
       }),
 });
@@ -144,11 +181,11 @@ export const themeSettings = (mode) => {
       ...(mode === "dark"
         ? {
             // palette values for dark mode
-            primary: {
-              main: colors.primary[500],
+            PurpleShade: {
+              main: colors.PurpleShade[500],
             },
             secondary: {
-              main: colors.greenAccent[500],
+              main: colors.PurpleShade[500],
             },
             neutral: {
               dark: colors.grey[700],
@@ -156,7 +193,7 @@ export const themeSettings = (mode) => {
               light: colors.grey[100],
             },
             background: {
-              default: colors.primary[500],
+              default: colors.PurpleShade[800],
             },
           }
         : {
@@ -231,3 +268,5 @@ export const useMode = () => {
   const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
   return [theme, colorMode];
 };
+
+

@@ -5,9 +5,6 @@ import { tokens,ColorModeContext } from "../theme";
 import InputBase from "@mui/material/InputBase";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
-import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
-import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
-import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 
 function Navbar() {
@@ -19,16 +16,17 @@ function Navbar() {
     {/* SEARCH BAR */}
     <Box
       display="flex"
-      backgroundColor={colors.primary[400]}
+      backgroundColor={`${colors.primary[400]} !important`}
       borderRadius="3px"
+      
     >
-      <InputBase sx={{ ml: 2, flex: 1 }} placeholder="Search" /> 
-      <IconButton type="button" sx={{ p: 1 }}>
+      <InputBase sx={{ ml: 2, flex: 1, color:'white'}} placeholder="Search" /> 
+      <IconButton type="button" sx={{ p: 1 , color:'black' }}>
         <SearchIcon />
       </IconButton>
     </Box>
 
-    {/* ICONS */}
+    {/* ICON */}
     <Box display="flex">
         {/*functions that control condition of light and dark mode */}
       <IconButton onClick={colorMode.toggleColorMode}>
@@ -38,15 +36,8 @@ function Navbar() {
           <LightModeOutlinedIcon />
         )}
       </IconButton>
-      <IconButton>
-        <NotificationsOutlinedIcon />
-      </IconButton>
-      <IconButton>
-        <SettingsOutlinedIcon />
-      </IconButton>
-      <IconButton>
-        <PersonOutlinedIcon />
-      </IconButton>
+      
+      
     </Box>
   </Box>
   )

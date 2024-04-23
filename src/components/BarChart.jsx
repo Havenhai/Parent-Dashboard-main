@@ -78,15 +78,15 @@ const BarChart = ({ isDashboard = false }) => {
         tickRotation: 0,
         legend: isDashboard ? undefined : "Lessons", // changed
         legendPosition: "middle",
-        legendOffset: 32,
+        legendOffset: 42,
       }}
       axisLeft={{
-        tickSize: 5,
-        tickPadding: 5,
+        tickSize: 10,
+        tickPadding: 10,
         tickRotation: 0,
-        legend: isDashboard ? undefined : "Overal Perfomance",
+        legend: isDashboard ? undefined : "Score",
         legendPosition: "middle",
-        legendOffset: -40,
+        legendOffset: -50,
       }}
       enableLabel={false}
       labelSkipWidth={12}
@@ -101,14 +101,14 @@ const BarChart = ({ isDashboard = false }) => {
           anchor: "bottom-right",
           direction: "column",
           justify: false,
-          translateX: 120,
+          translateX: 90,
           translateY: 0,
           itemsSpacing: 2,
           itemWidth: 100,
           itemHeight: 20,
           itemDirection: "left-to-right",
           itemOpacity: 0.85,
-          symbolSize: 20,
+          symbolSize: 5,
           effects: [
             {
               on: "hover",

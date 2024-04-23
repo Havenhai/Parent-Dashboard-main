@@ -1,6 +1,6 @@
 import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
-import { mockDataContacts} from "../../data/mockData";
+import { mockDataAchievers, mockDataContacts} from "../../data/mockData";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
 import EmailIcon from "@mui/icons-material/Email";
 // import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
@@ -27,7 +27,8 @@ function Dashboard() {
       <Box>
         <Button
           sx={{
-            backgroundColor: colors.blueAccent[700],
+            background: `${colors.primary[400]} !important`,
+            // backgroundColor: colors.PurpleShade[600],
             color: colors.grey[100],
             fontSize: "14px",
             fontWeight: "bold",
@@ -162,7 +163,7 @@ function Dashboard() {
       </Box>
       <Box
         gridColumn="span 4"
-        gridRow="span 2"
+        gridRow="span 3"
         backgroundColor={colors.primary[400]}
         overflow="auto"
       >
@@ -178,7 +179,7 @@ function Dashboard() {
             Leader's Board
           </Typography>
         </Box>
-        {mockDataContacts.map((Contacts, i) => (
+        {mockDataAchievers.map((Contacts, i) => (
           <Box
             key={`${Contacts.txId}-${i}`}
             display="flex"
@@ -200,13 +201,6 @@ function Dashboard() {
               </Typography>
             </Box>
             <Box color={colors.grey[100]}>{Contacts.city}</Box>
-            <Box
-              backgroundColor={colors.greenAccent[500]}
-              p="5px 10px"
-              borderRadius="4px"
-            >
-              ${Contacts.email}
-            </Box>
           </Box>
         ))}
       </Box>
@@ -219,7 +213,7 @@ function Dashboard() {
         p="30px"
       >
         <Typography variant="h5" fontWeight="600">
-          Improvement
+          Monthly Improvement
         </Typography>
         <Box
           display="flex"

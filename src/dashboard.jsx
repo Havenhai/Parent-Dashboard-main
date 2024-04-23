@@ -23,6 +23,7 @@ function DashboardX() {
             <Sidebars
               isCollapsed={isCollapsed}
               setIsCollapsed={setIsCollapsed}
+             
             />
           </div>
           <main
