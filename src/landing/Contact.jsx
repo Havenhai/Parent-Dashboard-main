@@ -1,31 +1,29 @@
 const Contact = () => {
   return (
-    <div className="bg-yellow-100 mx-28 py-16 px-14 flex items-center justify-between">
+    <div className="bg-yellow-100 mx-4 md:mx-28 py-8 md:py-16 px-4 md:px-14 flex flex-col md:flex-row items-center justify-between">
       {/* Left Content */}
-      <div className="text-[#590E87]">
+      <div className="text-black mb-8 md:mb-0 md:mr-8">
         <h2 className="text-4xl font-black mb-6">Contact Us</h2>
-        <div className="flex flex-col space-y-4">
-          <div>
+        <div className="flex flex-col md:flex-row gap-4">
+          <div className="mb-4 md:mb-0">
             <h3 className="text-gray-600 font-bold">Email</h3>
-            <p>support@educationalapp.com</p>
+            <p className="text-sm">support@educationalapp.com</p>
           </div>
-          <div>
+          <div className="mb-4 md:mb-0">
             <h3 className="text-gray-600 font-bold">Phone</h3>
-            <p>+1 123-456-7890</p>
+            <p className="text-sm">+1 123-456-7890</p>
           </div>
           <div>
             <h3 className="text-gray-600 font-bold">Address</h3>
-            <p>123 Main Street, City, State, Country</p>
+            <p className="text-sm">123 Main Street, City, State, Country</p>
           </div>
-          <button className="bg-[#590E87] text-white py-2 px-4 rounded">
-            Submit
-          </button>
         </div>
       </div>
 
       {/* Right Content */}
-      <form className="flex flex-col space-y-4 bg-gray-100 text-black p-4 rounded">
-        <div className="flex space-x-4">
+
+      <form className="flex flex-col  space-y-2  bg-gray-100 text-black p-4 rounded">
+        <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
           <div className="flex flex-col">
             <h4 className="font-medium">Name</h4>
             <input

@@ -43,10 +43,10 @@ export default function Navbar() {
                     src="Group 4.svg"
                     alt="chatterchums"
                   />
-                  <Link to={`/`} >
-                  <span className="ml-2 text-[#590E87]  font-semibold">
-                    chatterchums
-                  </span>
+                  <Link to={`/`}>
+                    <span className="ml-2 text-[#590E87]  font-semibold">
+                      chatterchums
+                    </span>
                   </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
@@ -87,7 +87,7 @@ export default function Navbar() {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        src="/Elephant.svg"
                         alt=""
                       />
                     </Menu.Button>
